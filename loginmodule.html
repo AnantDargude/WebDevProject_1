@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="/logincss.css">
+    <style>
+        .loginpg{
+            width: 50%;
+            height:fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            background-color: gainsboro;
+            border-radius: 7vw 2vw;
+        }
+        .loginpg p{
+            font-size: 4vw;
+            text-align: center;
+            padding: 2vw 1vw;
+            color: white;
+            border-bottom: 2px solid cornflowerblue;
+        }
+        .loginpg input{
+            position: relative;
+            left: 25%;
+            margin-bottom: 30px;
+            width: 50%;
+            height: 3vw;
+            border: none;
+            border-radius: 20px;
+            padding-left: 20px;
+            outline: none;
+        }
+        .loginpg .ipb{
+            position: relative;
+            right: 40%;
+            left: 40%;
+            width: 20%;
+            height: max-content;
+            text-align: center;
+            background-color: cornflowerblue;
+            color: white;
+            font-size: 1.5vw;
+            padding: 1vw 2vw;
+            border-radius: 30px;
+            font-weight: bolder;
+            border: none;
+        }
+        .loginpg .ipb:hover {
+            background-color: rgb(44, 112, 238);
+        }
+        .loginpg .ipb:focus {
+            outline: none;
+            background-color: rgb(44, 112, 238);
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="home" class="header">
+        <div class="logo">LegalBuzz</div>
+    </div>    
+    <ul class="navbar">
+        <li><a href="/index.html">Home</a></li>
+    </ul>
+
+    <script>
+        function myFun1(){
+            window.alert("Website is Under Maintenance")
+        }
+    </script>
+    <div class="loginpg">
+        <p>Login/Register</p>
+        <input type="text" placeholder="Enter Login ID"><br>
+        <input type="password" name="" id="" placeholder="Enter Password"><br>
+        <input class="ipb" type="button" value="Login" onclick="myFun1()">
+    </div>
+
+</body>
+</html>
