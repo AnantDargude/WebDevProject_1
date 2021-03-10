@@ -8,32 +8,36 @@ body{
 .header{
     width: 100%;
     position: relative;
-    background-color:rgb(100, 148, 237);
+    background-color:#e8e8e8;
     overflow: hidden;
 }
-.logo{
+.header .cmpname{
     font-size: 4vw;
-    font-weight: bold;
-    color: white;
-    margin-left: 30px;
+    margin-left: 5%;
+    line-height: 6vw;
     padding: 25px 0px;
-    text-shadow: 2px 2px 5px black;
-    float: left;
+    color:#30475e;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px #30475e;
+}
+.header .cmpname span{
+    color: #e8e8e8;
+    background-color: #f05454;
+    text-shadow: 2px 2px 5px #30475e;
 }
 .header .lgbtn{
     position:absolute;
     top:35%;
     right:5%;
-    color: cornflowerblue;
-    background-color: white;
+    color:#e8e8e8;
+    background-color:#f05454;
     border-radius: 5px;
     font-weight: 900;
-    font-size: 15px;
+    font-size: 2vw;
     box-shadow: 2px 2px 5px black;
 }
 .header .lgbtn:hover{
     color: white;
-    background-color:grey;
 }
 .header .lgbtn a{
     display: block;
@@ -44,11 +48,10 @@ body{
     color: white;   
 }
 .header .lgbtn a:visited{
-    color:cornflowerblue;   
+    color: #e8e8e8;
 }
 .header .lgbtn a:hover{
     color: white;
-    background-color:grey;
 }
 .header .lgbtn a:active{
     color:white;
@@ -61,11 +64,11 @@ body{
     position: sticky;
     top: 0;
     list-style-type: none;
-    background-color:white;
     overflow: hidden;
     margin: 0%;
     padding: 0%;
     box-shadow: 2px 2px 5px grey;
+    background-color: white;
 }
 .navbar li{
     float: left;
@@ -74,26 +77,29 @@ body{
     text-decoration: none;
     font-size: 1.5vw;
     font-weight: bolder;
-    color:cornflowerblue;
+    color:#30475e;
     display: block;
     padding: 10px 20px;
 }
 .navbar li a:hover{
-    color: white;
-    background-color: cornflowerblue ;
+    color: #e8e8e8;
+    background-color: #f05454 ;
 }
 
 
 
 .secheadings{
     margin: 0;
-    color: cornflowerblue;
+    color: #30475e;
     font-weight: bolder;
     text-align: center;
     /* word-spacing: 5px; */
     letter-spacing: 1vw;
     /* box-shadow: 1px 1px 10px cornflowerblue; */
     padding: 5vw 2vw;
+}
+.secheadings:hover{
+    color: #f05454;
 }
 
 
@@ -103,9 +109,16 @@ body{
     width: 100%;
     height: max-content;
     padding: 50px 30px;
-    background-color: rgba(169, 169, 169, 0.521);
-    color: white;
+    background-color: #e8e8e8;
+    color: #30475e;
     text-align: center;
+}
+.aboutus h1{
+    padding: 30px;
+    color:#f05454;
+}
+.aboutus h2{
+    padding: 10px 50px;
 }
 
 
@@ -125,7 +138,7 @@ body{
     box-shadow: 2px 2px 5px black;    
 }
 .services .container:hover{
-    box-shadow: 4px 4px 20px black;    
+    box-shadow: 4px 4px 20px #f05454;
 }
 .services .container img{
     width: 100%;
@@ -136,7 +149,7 @@ body{
     text-align: center;
     font-size: 2.5vw;
     font-weight: bolder;
-    color: cornflowerblue;
+    color:#30475e;
 }
 
 
@@ -144,10 +157,13 @@ body{
     box-sizing: border-box;
     width: 100%;
     height:max-content;
-    background-color: rgba(169, 169, 169, 0.521);
+    background-color: #e8e8e8;
     text-align: center;
     padding: 50px 30px;
-    color: white;
+    color: #30475e;
+}
+.contactus:hover{
+    color: #f05454;
 }
 
 
@@ -159,7 +175,7 @@ body{
     position:relative;
     bottom: 0;
     /* background-color:cornflowerblue; */
-    background-color: rgba(169, 169, 169, 0.521);
+    background-color: #e8e8e8;
     width: 100%;
     height: 50px;
 }
@@ -167,7 +183,7 @@ div .copyright{
     position: absolute;
     float: left;
     /* color: white; */
-    color: cornflowerblue;
+    color: #30475e;
     line-height: 50px;
     vertical-align:middle;
     font-size: 1.5vw;
@@ -180,27 +196,27 @@ div .copyright{
 .smlogo a i{
     margin-right: 2vw;
     /* color:white; */
-    color: cornflowerblue;
+    color: #30475e;
     line-height: 50px;
     font-size: 2vw;
 }
 .smlogo a i:hover{
-    color: black;
+    color:#f05454;
 }
 
 
 
 .tp p{
-    color: white;
+    color:#30475e;
     font-size: 1vw;
     text-align: center;
     font-weight: bolder;
     margin-top: 0;
     margin-bottom: 30px;
-    background-color:rgba(169, 169, 169, 0.521) ;
+    background-color:#e8e8e8 ;
 }
 .tp .red{
-    color: red;
+    color:#f05454;
 }
 
 
