@@ -213,7 +213,11 @@ div .copyright{
     font-weight: bolder;
     margin-top: 0;
     margin-bottom: 30px;
+    padding: 20px 0px;
     background-color:#e8e8e8 ;
+}
+.tp p:hover{
+    color: #f05454;
 }
 .tp .red{
     color:#f05454;
