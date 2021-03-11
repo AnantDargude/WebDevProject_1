@@ -9,52 +9,11 @@ body{
     width: 100%;
     position: relative;
     background-color:#e8e8e8;
-    overflow: hidden;
 }
-.header .cmpname{
-    font-size: 4vw;
-    margin-left: 5%;
-    line-height: 6vw;
-    padding: 25px 0px;
-    color:#30475e;
-    font-weight: bolder;
-    text-shadow: 2px 2px 3px #30475e;
-}
-.header .cmpname span{
-    color: #e8e8e8;
-    background-color: #f05454;
-    text-shadow: 2px 2px 5px #30475e;
-}
-.header .lgbtn{
-    position:absolute;
-    top:35%;
-    right:5%;
-    color:#e8e8e8;
-    background-color:#f05454;
-    border-radius: 5px;
-    font-weight: 900;
-    font-size: 2vw;
-    box-shadow: 2px 2px 5px black;
-}
-.header .lgbtn:hover{
-    color: white;
-}
-.header .lgbtn a{
-    display: block;
-    padding: 5px 10px;
-    text-decoration: none;
-}
-.header .lgbtn a:link{
-    color: white;   
-}
-.header .lgbtn a:visited{
-    color: #e8e8e8;
-}
-.header .lgbtn a:hover{
-    color: white;
-}
-.header .lgbtn a:active{
-    color:white;
+.header img{
+    padding: 2% 2% 1% 4%;
+    height: 10%;
+    width: 20%;
 }
 
 
@@ -85,6 +44,9 @@ body{
     color: #e8e8e8;
     background-color: #f05454 ;
 }
+.navbar .lgbtn{
+    float: right;
+}
 
 
 
@@ -93,9 +55,8 @@ body{
     color: #30475e;
     font-weight: bolder;
     text-align: center;
-    /* word-spacing: 5px; */
+    font-size: 2.5vw;
     letter-spacing: 1vw;
-    /* box-shadow: 1px 1px 10px cornflowerblue; */
     padding: 5vw 2vw;
 }
 .secheadings:hover{
@@ -159,7 +120,7 @@ body{
     height:max-content;
     background-color: #e8e8e8;
     text-align: center;
-    padding: 50px 30px;
+    padding: 30px;
     color: #30475e;
 }
 .contactus:hover{
@@ -170,35 +131,27 @@ body{
 
 
 .footer{
-    margin: 0%;
-    clear: both;
-    position:relative;
-    bottom: 0;
-    /* background-color:cornflowerblue; */
-    background-color: #e8e8e8;
+    display: flex;
     width: 100%;
-    height: 50px;
+    background-color: #e8e8e8;
 }
-div .copyright{
-    position: absolute;
-    float: left;
-    /* color: white; */
+.footer .copyright{
+    margin-left: 5%;
+    align-self:center;
     color: #30475e;
-    line-height: 50px;
-    vertical-align:middle;
-    font-size: 1.5vw;
-    margin-left: 30px;
+    font-size: 1vw;
 }
-.smlogo{
-    float: right;
-    margin-right: 30px;
+.footer .smlogo{
+    margin-right: 5%;
+    margin-left: auto;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    align-self: center;
 }
 .smlogo a i{
     margin-right: 2vw;
-    /* color:white; */
     color: #30475e;
-    line-height: 50px;
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 .smlogo a i:hover{
     color:#f05454;
