@@ -8,6 +8,7 @@
 
     <link rel="shortcut icon" href="/images/logopng.png" type="image/x-icon">
     <link rel="stylesheet" href="/logincss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 </head>
@@ -16,18 +17,33 @@
         <img src="/images/logosvg.svg" alt="">
     </div>    
     
-    
+
+
+    <script>
+        function myFun1(){
+            window.alert("Website is Under Maintenance")
+        }
+    </script>
     <ul class="navbar">
         <li><a href="#home">Home</a></li>
         <li><a href="#aboutus">About Us</a></li>
         <li><a href="#services">Our Services</a></li>
         <li><a href="#contactus">Contact us</a></li>
-        <li class="lgbtn"><a href="/loginmodule.html">LOGIN</a></li>
+        <li class="lgbtn">
+            <a href="">LOGIN</a> 
+            <div class="loginpg">
+                <p>Login</p>
+                <input type="text" placeholder="Enter Login ID"><br>
+                <input type="password" name="" id="" placeholder="Enter Password"><br>
+                <input class="ipb" type="button" value="Login" onclick="myFun1()">
+            </div>
+        </li>
     </ul>
+    <div class="loginhover"></div>
 
 
 
-    <h1 id="aboutus" class="secheadings"> ABOUT US </h1>
+    <h1 id="aboutus" class="secheadings animate__animated animate__backInLeft animate__delay-1s animate__slow"> ABOUT US </h1>
     <div class="aboutus">
         <h1>Rent Agreements at your Doorstep</h1>
         <h2>One can create the rental agreement online on LegalBuzz.com. It is completely hassle free
@@ -38,33 +54,54 @@
     
     
     
-    <h1 id="services" class="secheadings"> OUR SERVICES </h1>
+    <h1 id="services" class="secheadings animate__animated animate__backInLeft animate__delay-1s animate__slow"> OUR SERVICES </h1>
+    <div class="mysticky"><a href="#home"><i class="fas fa-caret-up"></i></a></div>
     <div class="services">
-        <div class="container">
+        <div class="container animate__animated animate__headShake animate__infinite animate__slow">
             <img src="/images/rr.jpg" alt="">
             <div> REGISTERED AGREEMENTS </div>
         </div>
-        <div class="container">
+        <div class="container animate__animated animate__pulse animate__infinite animate__slow">
             <img src="/images/na.jpg" alt="">
             <div> NOTARY AGREEMENTS </div>
         </div>
-        <div class="container">
+        <div class="container animate__animated animate__headShake animate__infinite animate__slow">
             <img src="/images/poa.jpg" alt="">
             <div> POWER OF ATTORNEY </div>
         </div>
     </div>
 
 
-    <h1 id="contactus" class="secheadings"> CONTACT US </h1>
-    <div class="contactus">
-        <h1> <u>Office Address</u><br> A-203, Blossom Apartment, Datt Mandir Road,<br> Wakad, Pune-411057 <br> 8857914077 <hr></h1>
+    <h1 id="contactus" class="secheadings animate__animated animate__backInLeft animate__delay-1s animate__slow"> CONTACT US </h1>
+    <div class="contactme">
+        <div class="inputcontainer">
+            <p style="color: #f05454; font-size: 2vw; font-weight: bolder;">Contact us<p>
+            <input type="text" placeholder="Name" required><br>
+            <input type="email" name="" id="email" placeholder="Email" required><br>
+            <textarea name="" id="desc" cols="30" rows="10" placeholder="Message" style="font-family: monospace;" required></textarea><br>
+            <input type="button" value="Submit" ><br>
+        </div>
+
+        <div class="myaddr">
+            <p><span style="color: #f05454; font-size: 2vw; font-weight: bolder;">Office Address</span><hr> A-203, Blossom Apartment, Datt Mandir Road, Wakad, Pune-411057<br>8857914077<hr></p>
+        </div>
+
+        <div class="sitemap">
+            <ul>
+                <p style="text-align: center; color: #f05454; font-weight: bolder; font-size: 2vw;">SiteMap</p>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+        </div>
     </div>
 
 
 
+    
     <div class="footer" >
         <div class="copyright"> <b><i>&copy; LegalBuzz Services Pvt. Ltd.</i></b> </div>
-
         <div class="smlogo">
             <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
             <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
@@ -73,10 +110,11 @@
             <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
         </div>        
     </div>
-
     <div class="tp">
-        <p> <i>Made with <span class="red">&hearts;</span> by Anant Dargude</i></p>
+        <p> <i>Made with <span class="red animate__animated animate__jackInTheBox animate__infinite">&hearts;</span> by Anant Dargude</i></p>
     </div>
+
+    
 
 
 

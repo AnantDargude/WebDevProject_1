@@ -8,7 +8,8 @@ body{
 .header{
     width: 100%;
     position: relative;
-    background-color:#e8e8e8;
+    background: rgb(232,232,232);
+    background: linear-gradient(90deg, rgba(232,232,232,1) 0%, rgba(48,71,94,1) 100%);
 }
 .header img{
     padding: 2% 2% 1% 4%;
@@ -20,6 +21,7 @@ body{
 
 
 .navbar{
+    z-index: 5;
     position: sticky;
     top: 0;
     list-style-type: none;
@@ -47,6 +49,63 @@ body{
 .navbar .lgbtn{
     float: right;
 }
+.navbar .lgbtn:hover .loginpg{
+    position: fixed;
+    right: 2%;
+    display: block;
+}
+
+
+
+.navbar .lgbtn .loginpg{
+    display: none;
+    width: 25%;
+    height:fit-content;
+    background-color:#30475e79;
+    border-radius: 5vw 2vw;
+}
+.navbar .lgbtn .loginpg p{
+    font-size: 3vw;
+    text-align: center;
+    color: #f05454;
+    font-weight: bolder;
+    margin-top: 1%;
+    padding: 1%;
+    border-bottom: 5px solid #e8e8e8;
+}
+.navbar .lgbtn .loginpg input{
+    position: relative;
+    left: 15%;
+    margin-bottom: 20px;
+    width:63%;
+    height: 2.5vw;
+    border: none;
+    border-radius: 10em 2em;
+    padding-left: 2vw;
+    outline: none;
+}
+.navbar .lgbtn .loginpg .ipb{
+    position: relative;
+    right: 35%;
+    left: 35%;
+    width: 30%;
+    height: max-content;
+    text-align: center;
+    background-color: #f05454;
+    color: #e8e8e8;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    border-radius: 10em 2em;
+    font-weight: bolder;
+    border: none;
+}
+.navbar .lgbtn .loginpg .ipb:hover {
+    color: #30475e;
+}
+.navbar .lgbtn .loginpg .ipb:focus {
+    outline: none;
+    background-color: #f05454;
+}
 
 
 
@@ -70,23 +129,45 @@ body{
     width: 100%;
     height: max-content;
     padding: 50px 30px;
-    background-color: #e8e8e8;
+    background-color: #e8e8e852;
     color: #30475e;
     text-align: center;
 }
 .aboutus h1{
-    padding: 30px;
+    padding: 2%;
     color:#f05454;
 }
 .aboutus h2{
-    padding: 10px 50px;
+    padding: 2% 10%;
 }
+
+
+
+.mysticky{
+    position: fixed;
+    right:2%;
+    bottom:2%;
+    width:4vw;
+    height: 4vw;
+    background-color: #f05454;
+    border-radius: 25%;
+}
+.mysticky i{
+    line-height: 4vw;
+    font-size:3vw;
+    padding: 0 1vw;
+}
+.mysticky i a:link, a:active, a:visited{
+    color:#30475e
+}
+
 
 
 
 
 .services{
     display: flex;
+    background-color: #e8e8e852;
 }
 .services .container{
     margin-top: 30px;
@@ -96,9 +177,9 @@ body{
     float: left;
     max-width: 20%;
     max-height: 80%;
-    box-shadow: 2px 2px 5px black;    
+    box-shadow: 2px 2px 5px black;   
 }
-.services .container:hover{
+.container:hover{
     box-shadow: 4px 4px 20px #f05454;
 }
 .services .container img{
@@ -114,17 +195,88 @@ body{
 }
 
 
-.contactus{
-    box-sizing: border-box;
+
+.contactme{
     width: 100%;
-    height:max-content;
-    background-color: #e8e8e8;
+    display: flex;
+}
+.contactme div{
+    width: 33.33%;
+    float: left; 
+    background: rgba(48,71,94,1);
+    background: linear-gradient(180deg, rgba(232,232,232,1) 0%, rgba(48,71,94,1) 100%);
+}
+.contactme .inputcontainer{
+    padding:2%;
+}
+.contactme .inputcontainer p{
+    color: #f05454;
+    text-align: center;
+}
+.contactme .inputcontainer input{
+    width: 15vw;
+    margin-bottom: 2%;
+    height: 2vw;
+    float: left;
+    padding-left: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.contactme .inputcontainer input:focus{
+    outline:none;
+}
+.contactme .inputcontainer textarea{
+    float: left;
+    margin-bottom: 2%;
+    width: 20vw;
+    height: 5vw;
+    padding-left: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.contactme .inputcontainer textarea:focus{
+    outline:none;
+}
+.contactme .inputcontainer input[type="button"]{
+    clear: both;
+    width: 20%;
+    height: 2vw;
+    color: #30475e;
+    background-color: #f05454;
+}
+.contactme .myaddr{
+    padding:5%;
     text-align: center;
     padding: 30px;
-    color: #30475e;
+    font-size: 1.5vw;
+    color: #e8e8e8;
 }
-.contactus:hover{
-    color: #f05454;
+.contactme .myaddr p{
+    padding:2%;
+}
+.contactme .sitemap{
+    padding:auto;
+}
+.contactme .sitemap{
+    padding:2%;
+}
+.contactme .sitemap li{
+    list-style-type: none;
+    color: #e8e8e8;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    margin-bottom: 7%;
+    
+}
+.contactme .sitemap a{
+    text-decoration: none;
+    color: #e8e8e8;
+    background-color: #f05454;
+    padding: 0.5vw 1vw;
+    border-radius: 5px;
+}
+.contactme .sitemap a:hover{
+    color: #30475e;
 }
 
 
@@ -133,12 +285,12 @@ body{
 .footer{
     display: flex;
     width: 100%;
-    background-color: #e8e8e8;
+    background-color: rgba(48, 71, 94, 0.950);
 }
 .footer .copyright{
     margin-left: 5%;
     align-self:center;
-    color: #30475e;
+    color: #e8e8e8;
     font-size: 1vw;
 }
 .footer .smlogo{
@@ -150,7 +302,7 @@ body{
 }
 .smlogo a i{
     margin-right: 2vw;
-    color: #30475e;
+    color: #e8e8e8;
     font-size: 2.5vw;
 }
 .smlogo a i:hover{
@@ -160,14 +312,14 @@ body{
 
 
 .tp p{
-    color:#30475e;
+    color:#e8e8e8;
     font-size: 1vw;
     text-align: center;
     font-weight: bolder;
-    margin-top: 0;
+    margin: 0;
+    background-color:rgba(48,71,94,1) ;
+    padding: 5px;
     margin-bottom: 30px;
-    padding: 20px 0px;
-    background-color:#e8e8e8 ;
 }
 .tp p:hover{
     color: #f05454;
@@ -175,5 +327,3 @@ body{
 .tp .red{
     color:#f05454;
 }
-
-
