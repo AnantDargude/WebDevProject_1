@@ -7,39 +7,40 @@
     <title>LegalBuzz</title>
 
     <link rel="shortcut icon" href="/images/logopng.png" type="image/x-icon">
+    
     <link rel="stylesheet" href="/logincss.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 </head>
 <body>
     <div id="home" class="header">
-        <img src="/images/logosvg.svg" alt="">
-    </div>    
-    
-
-
+        <div class="logo"><img src="/images/logosvg.svg" alt=""></div>
+        <div class="lgbtn">
+            LOGIN
+            <div class="loginpg">
+                <input type="text" placeholder="Enter Login ID"><br>
+                <input type="password" name="" id="" placeholder="Enter Password"><br>
+                <input class="ipb" type="button" value="Login" onclick="myFun1()">
+            </div>
+        </div>
+    </div>
     <script>
         function myFun1(){
             window.alert("Website is Under Maintenance")
         }
     </script>
+    
+
+
+    
     <ul class="navbar">
         <li><a href="#home">Home</a></li>
         <li><a href="#aboutus">About Us</a></li>
         <li><a href="#services">Our Services</a></li>
         <li><a href="#contactus">Contact us</a></li>
-        <li class="lgbtn">
-            <a href="">LOGIN</a> 
-            <div class="loginpg">
-                <p>Login</p>
-                <input type="text" placeholder="Enter Login ID"><br>
-                <input type="password" name="" id="" placeholder="Enter Password"><br>
-                <input class="ipb" type="button" value="Login" onclick="myFun1()">
-            </div>
-        </li>
     </ul>
-    <div class="loginhover"></div>
+
 
 
 
@@ -53,9 +54,10 @@
     </div>
     
     
+    <div class="mysticky"><a href="#home"><i class="fas fa-caret-up"></i></a></div>
+    
     
     <h1 id="services" class="secheadings animate__animated animate__backInLeft animate__delay-1s animate__slow"> OUR SERVICES </h1>
-    <div class="mysticky"><a href="#home"><i class="fas fa-caret-up"></i></a></div>
     <div class="services">
         <div class="container animate__animated animate__headShake animate__infinite animate__slow">
             <img src="/images/rr.jpg" alt="">
@@ -73,6 +75,7 @@
 
 
     <h1 id="contactus" class="secheadings animate__animated animate__backInLeft animate__delay-1s animate__slow"> CONTACT US </h1>
+    
     <div class="contactme">
         <div class="inputcontainer">
             <p style="color: #f05454; font-size: 2vw; font-weight: bolder;">Contact us<p>
